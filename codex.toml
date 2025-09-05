@@ -1,0 +1,18 @@
+## Codex configuration file for voice-pe-realtime
+
+# This file configures the OpenAI Codex CLI to integrate with
+# your Home Assistant MCP server.  The `mcp_servers` section
+# defines a remote server that the assistant can use to call
+# Home Assistant services when running inside Codex.
+
+[mcp_servers.homeassistant]
+type = "remote"
+url = "https://example-homeassistant.local/mcp_server"
+key = "YOUR_LONG_LIVED_TOKEN"
+
+# Replace the `url` with your publicly accessible Home Assistant MCP URL
+# and set `key` to a valid long-lived access token or bearer token that
+# has permission to call the entities and services you wish to expose.
+
+# You can add additional servers or local client tools as needed. See
+# OpenAI Codex documentation for details.
